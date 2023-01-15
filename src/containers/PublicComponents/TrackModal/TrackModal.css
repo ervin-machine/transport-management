@@ -1,0 +1,21 @@
+.track-modal-map-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.track-modal-map-content-2 {
+    display: flex;
+}
+
+.track-modal-text {
+    color: white;
+}
+
+.left-text {
+    margin-right: 10px !important;
+}
+
+.track-modal-text-2 {
+    color: white;
+    margin-top: 5px !important;
+}

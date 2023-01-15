@@ -1,0 +1,50 @@
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../../assets/fonts/Roboto-Regular.ttf');
+}
+
+.left-sidebar-head {
+    width: 251px;
+    height: 100%;
+    padding-right: 21px;
+    margin-left: -20px;
+    margin-top: -8px;
+}
+
+.left-sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.left-sidebar-list {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.left-sidebar-list-item {
+    display: flex;
+    margin-left: 11px;
+    padding-left: 10px;
+
+}
+
+.left-sidebar-list-item-text {
+    font-family: RobotoRegular;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9D9D9D;
+    text-align: left;
+    margin-left: 15px;
+    width: max-content;
+}
+
+.sidebar-content {
+    background: rgb(24, 24, 24);
+    width: 250px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}

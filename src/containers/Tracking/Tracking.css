@@ -1,0 +1,17 @@
+.wrapper {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+}
+
+.track-head-text {
+    color: white;
+}
+
+.card-text-1 {
+    color: white;
+}
+
+.card-text-2 {
+    color: white;
+}

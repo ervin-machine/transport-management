@@ -1,0 +1,14 @@
+.wrapper {
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+}
+
+.partner-head-text {
+    color: white;
+}
+
+.img-partner {
+    width: 100%;
+    height: 123.54px;
+}

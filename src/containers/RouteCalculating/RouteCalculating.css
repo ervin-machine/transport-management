@@ -1,0 +1,28 @@
+.route-calculating {
+    position: absolute;
+    background-color: #252525;
+    width: 350px;
+    border-radius: 10px;
+    margin: 200px 20px 20px 20px;
+}
+
+.route-input {
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 20px 0px;
+    height: 40px;
+    width: 300px;
+    background-color: #6d6d6d;
+}
+
+.calculate-button {
+    background-color: #6d6d6d;
+    margin-left: 90px;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
