@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
+import ProfitStatus from './components/ProfitStatus'
 import "./Dashboard.css"
 
 import { selectKusurData } from "./store/selectors"
@@ -17,7 +18,7 @@ const Dashboard = React.memo(function Dashboard(props) {
     return (
         <div className='dashboard-container'>
             <div className='dashboard-content'>
-                <div className='footer-head'>© 2022 All rights reserved. Kusur.</div>
+                <ProfitStatus />
             </div>
         </div>
     )

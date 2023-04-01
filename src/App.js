@@ -10,14 +10,21 @@ import DnevnaAnaliza from './containers/DnevnaAnaliza';
 import MjesecnaAnaliza from './containers/MjesecnaAnaliza/index'
 import Partners from './containers/Partners/index'
 import Drivers from './containers/Drivers';
+import ProfitEvidence from './containers/Dashboard/components/ProfitEvidence';
 
 function App() {
-  const [section, setSection] = useState('Tracking')
+  const [section, setSection] = useState('ProfitEvidence')
 
   const RenderSection = () => {
     if (section === "Dashboard") {
       return (
         <Dashboard setSection={setSection} />
+      )
+    }
+
+    if (section === "ProfitEvidence") {
+      return (
+        <ProfitEvidence setSection={setSection} />
       )
     }
 
@@ -74,7 +81,7 @@ function App() {
       <div className="App">
         <Header />
         <div style={{display: "flex" }}>
-          <LeftSidebar />
+          <LeftSidebar setSection={setSection} />
           <RenderSection />
         </div>
       </div>

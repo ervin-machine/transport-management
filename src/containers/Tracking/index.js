@@ -37,7 +37,7 @@ function Tracking(props) {
                 Route Tracking
             </Typography>
             <Grid container spacing={2}>
-                <Grid item sm={6} xs={10} xl={3} lg={4} md={3}>
+                <Grid item sm={6} xs={10} xl={3} lg={6} md={3}>
                     <Item sx={{ backgroundColor: "black" }}>
                         <Card sx={{ maxWidth: 445, backgroundColor: "rgb(24, 24, 24)" }} onClick={handleOpenTrackModal}>
                             <CardActionArea>

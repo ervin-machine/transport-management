@@ -1,0 +1,15 @@
+.form-inputs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.form-content {
+    width: 1100px;
+    padding: 40px;
+    height: auto;
+    background-color: #252525;
+    position: absolute;
+    left: 50%;
+    border-radius: 20px;
+    transform: translateX(-40%);
+}
