@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
 import ProfitStatus from './components/ProfitStatus'
+import DeliveryStatus from './components/DeliveryStatus'
 import "./Dashboard.css"
 
 import { selectKusurData } from "./store/selectors"
@@ -19,6 +20,7 @@ const Dashboard = React.memo(function Dashboard(props) {
         <div className='dashboard-container'>
             <div className='dashboard-content'>
                 <ProfitStatus />
+                <DeliveryStatus />
             </div>
         </div>
     )

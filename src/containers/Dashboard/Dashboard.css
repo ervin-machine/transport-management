@@ -1,3 +1,7 @@
+.dashboard-content {
+    display: flex;
+}
+
 .profit-status-container {
     background-color: antiquewhite;
     width: 350px;
