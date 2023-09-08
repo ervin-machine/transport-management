@@ -44,11 +44,18 @@
 .sidebar-content {
     background: rgb(24, 24, 24);
     width: 250px;
-    height: 100vh;
+    height: 93.5vh;
     position: sticky;
     top: 0;
 }
 
 .nav-item {
     cursor: pointer;
+}
+
+.add-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }

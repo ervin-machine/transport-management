@@ -1,18 +1,31 @@
+
+#root {
+    overflow-y: hidden;
+}
+
+p {
+    font-size: 14px;
+}
+
 .dashboard-content {
+    position: absolute;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .profit-status-container {
-    background-color: antiquewhite;
-    width: 350px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .profit-status-card {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 5px;
 }
 
 
@@ -20,7 +33,8 @@
     border-radius: 20px;
     width: 300px;
     height: 100px;
-    background-color: white;
+    background-color: rgb(24, 24, 24);
+    color: white;
 }
 
 .profit-status-card-text {
@@ -34,4 +48,105 @@
     text-align: right;
     margin-right: 20px;
     margin-top: -15px;
+}
+
+.fleet-information {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.loading-card-status-content {
+    width: 500px;
+    height: 170px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.delivery-card-status {
+    width: 255px;
+    height: 475px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 5px;
+    margin-left: 10px; 
+}
+
+.profit-country-content {
+    width: 1010px;
+    height: 295px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 10px;
+}
+
+.avg-delivery-route-content {
+    width: 520px;
+    height: 295px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    margin-right: 15px;
+    flex-direction: column;
+}
+
+.avg-time-delivery-content {
+    width: 1010px;
+    height: 295px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.loading-time-content {
+    margin-left: -80px;
+}
+
+.loading-weight-content {
+    margin-left: -10px;
+}
+
+.loading-status-content {
+    font-size: 14px;
+}
+
+.delivery-by-country-title {
+    margin-top: 40px;
+}
+
+.profit-country-title {
+    margin-top: 20px;
+}
+
+.avg-delivery-route-title {
+    margin-top: 20px;
+}
+
+.avg-delivery-time-title {
+    margin-top: 20px;
 }

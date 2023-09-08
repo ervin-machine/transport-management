@@ -1,8 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./LeftSidebar.css"
+
+import AddModal from '../../containers/PublicComponents/AddModal';
 
 function LeftSidebar(props) {
   const { setSection } = props;
+  const [isEIExpanded, setIsEIExpanded] = useState(false);
+  const [isIzvjestajExpanded, setIsIzvjestajExpanded] = useState(false);
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  
+  const handleEIExpand = () => {
+    setIsEIExpanded(!isEIExpanded);
+  }
+
+  const handleIzvjestajExpand = () => {
+    setIsIzvjestajExpanded(!isIzvjestajExpanded);
+  }
+
+  const handleExportImport = () => {
+    handleEIExpand();
+    setSection("ExportImport")
+  }
+
+  const handleIzvjestaj = () => {
+    handleIzvjestajExpand();
+    setSection("MjesecnaAnaliza")
+  }
+
+  const handleAddModal = () => {
+    setIsAddModalOpen(!isAddModalOpen);
+  }
 
   return (
     <div className='sidebar-content'>
@@ -16,15 +43,17 @@ function LeftSidebar(props) {
             <li className="nav-item" onClick={() => setSection("Partners")}>
               <i class="fas fa-tachometer-alt"></i><span>Partners</span>
             </li>
-            <li className="nav-item" onClick={() => setSection("ExportImport")}>
+            <li className="nav-item" onClick={handleExportImport}>
               <i class="fas fa-table"></i><span>Export/Import</span>
             </li>
+            <div style={{ display: isEIExpanded ? "block" : "none", marginLeft: "15px"}}>
             <li className="nav-item" onClick={() => setSection("Export")}>
               <i class="fas fa-table"></i><span>Export</span>
             </li>
             <li className="nav-item" onClick={() => setSection("Import")}>
               <i class="fas fa-table"></i><span>Import</span>
             </li>
+            </div>
             <li className="nav-item" onClick={() => setSection("Tracking")}>
               <i class="fas fa-table"></i><span>Route Tracking</span>
             </li>
@@ -37,19 +66,24 @@ function LeftSidebar(props) {
             <li className="nav-item" onClick={() => setSection("RouteCalculating")}>
               <i class="fas fa-window-maximize"></i><span>Route Calculate</span>
             </li>
-            <li className="nav-item" onClick={() => setSection("MjesecnaAnaliza")}>
-              <i class="fas fa-window-maximize"></i><span>Analiza</span>
+            <li className="nav-item" onClick={handleIzvjestaj}>
+              <i class="fas fa-window-maximize"></i><span>Izvjestaj</span>
             </li>
-            <li className="nav-item" onClick={() => setSection("MjesecnaAnaliza")}>
-              <i class="fas fa-window-maximize"></i><span>Mjesecni izvjestaj</span>
-            </li>
-            <li className="nav-item" onClick={() => setSection("DnevnaAnaliza")}>
-              <i class="fas fa-window-maximize"></i><span>Dnevni Izvjestaj</span>
-            </li>
+            <div style={{ display: isIzvjestajExpanded ? "block" : "none", marginLeft: "15px"}}>
+              <li className="nav-item" onClick={() => setSection("MjesecnaAnaliza")}>
+                <i class="fas fa-window-maximize"></i><span>Mjesecni izvjestaj</span>
+              </li>
+              <li className="nav-item" onClick={() => setSection("DnevnaAnaliza")}>
+                <i class="fas fa-window-maximize"></i><span>Dnevni Izvjestaj</span>
+              </li>
+            </div>
           </ul>
-          <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+          
         </div>
+        
       </nav>
+        <AddModal setSection={setSection} isOpen={isAddModalOpen} />
+        <button className='add-button' onClick={handleAddModal}>ADD</button>
     </div>
   )
 }

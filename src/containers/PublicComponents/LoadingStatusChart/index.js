@@ -5,13 +5,13 @@ import { PieChart, Pie, Cell } from 'recharts';
 const RADIAN = Math.PI / 180;
 const data = [
   { name: 'A', value: 20, color: '#676767' },
-  { name: 'B', value: 20, color: '#F2A42C' },
-  { name: 'C', value: 20, color: '#70C3ED' },
+  { name: 'B', value: 20, color: '#676767' },
+  { name: 'C', value: 20, color: '#676767' },
 ];
-const cx = 80;
-const cy = 280;
-const iR = 60;
-const oR = 80;
+const cx = 50;
+const cy = 270;
+const iR = 40;
+const oR = 50;
 const value = 50;
 
 const needle = (value, data, cx, cy, iR, oR, color) => {
@@ -39,7 +39,7 @@ const needle = (value, data, cx, cy, iR, oR, color) => {
   ];
 };
 
-export default class FleetStatusChart extends PureComponent {
+export default class LoadingStatusChart extends PureComponent {
   render() {
     return (
       <PieChart width={170} height={500}>

@@ -1,10 +1,71 @@
 {
     "name": "Ime kompanije",
-    "trucks": [],
-    "drivers": [],
-    "routes": [],
+    "trucks": [
+        {
+            "id": 1,
+            "model": "Truck 1",
+            "year": 2020,
+            "img": "slika 1"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "ime": "ime",
+            "prezime": "prezime",
+            "godRodjenaj": "04.06.2001",
+            "kategorije": ["B", "C"],
+            "img": "slika1",
+            "role": "driver"
+        },
+        {
+            "id": 2,
+            "ime": "ime",
+            "prezime": "prezime",
+            "godRodjenaj": "04.06.2001",
+            "kategorije": ["B", "C"],
+            "img": "slika1",
+            "role": "disponent"
+        },
+        {
+            "id": 3,
+            "ime": "ime",
+            "prezime": "prezime",
+            "godRodjenaj": "04.06.2001",
+            "kategorije": ["B", "C"],
+            "img": "slika1",
+            "role": "boss"
+        }
+    ],
+    "routes": [
+        {
+            "id": 1,
+            "lat": "lat",
+            "lng": "lng",
+            "driver": "driver",
+            "truck": "truck",
+            "finished": false,
+            "price": 1400,
+            "kilometers": 3000,
+            "timeLeft": 300,
+            "deadline": "20.08.2023",
+            "placeFrom": "from",
+            "placeTo": "to",
+            "isOnTime": false,
+            "started": "startedFrom",
+            "finishTime": "finishTIme",
+            "type": "export",
+            "company": "company"
+        }
+    ],
     "currentProfit": "2000$",
     "putni-nalog": [],
-    "partners": [],
+    "partners": [
+        {
+            "id": 1,
+            "name": "name 1",
+            "img": "slika 1"
+        }
+    ],
     "profitEvidences": []
 }

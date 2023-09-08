@@ -3,7 +3,12 @@ import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
 import ProfitStatus from './components/ProfitStatus'
-import DeliveryStatus from './components/DeliveryStatus'
+import FleetStatus from './components/FleetStatus'
+import LoadingStatus from './components/LoadingStatus'
+import DeliveryStatus from './components/DelieryStatus'
+import ProfitCountry from './components/ProfitCountry'
+import AvgDevliveryRoute from './components/AvgDevliveryRoute'
+import AvgTimeDelivery from './components/AvgTimeDelivery'
 import "./Dashboard.css"
 
 import { selectKusurData } from "./store/selectors"
@@ -19,8 +24,17 @@ const Dashboard = React.memo(function Dashboard(props) {
     return (
         <div className='dashboard-container'>
             <div className='dashboard-content'>
-                <ProfitStatus />
-                <DeliveryStatus />
+            <ProfitStatus />
+            <div>
+                <div style={{ display: "flex" }}>
+                    <FleetStatus />
+                    <LoadingStatus />
+                </div>
+                <ProfitCountry />
+            </div>
+            <DeliveryStatus />
+            <AvgDevliveryRoute />
+            <AvgTimeDelivery />
             </div>
         </div>
     )

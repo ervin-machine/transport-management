@@ -11,7 +11,7 @@ import { Form as BForm, Alert } from "react-bootstrap";
 
 function ProfitEvidence() {
   return (
-    <div>
+    <div className="form-content">
       <Typography
         gutterBottom
         variant="h5"
@@ -20,7 +20,7 @@ function ProfitEvidence() {
       >
         Profit Evidence
       </Typography>
-      <div className="form-content">
+      <div>
         <Formik
           initialValues={{
             route: "",

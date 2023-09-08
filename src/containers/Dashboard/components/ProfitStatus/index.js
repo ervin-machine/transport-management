@@ -4,7 +4,6 @@ import ProfitStatusCard from '../../../PublicComponents/ProfitStatusCard'
 function ProfitStatus() {
   return (
     <div className='profit-status-container'>
-        <p>Time period: Last Month</p>
         <ProfitStatusCard title="Revenue" price="824,217" percentage="-4" />
         <ProfitStatusCard title="Costs" price="255,507" percentage="-4" />
         <ProfitStatusCard title="Profit" price="568,710" percentage="-4" />

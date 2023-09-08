@@ -11,9 +11,10 @@ import MjesecnaAnaliza from './containers/MjesecnaAnaliza/index'
 import Partners from './containers/Partners/index'
 import Drivers from './containers/Drivers';
 import ProfitEvidence from './containers/Dashboard/components/ProfitEvidence';
+import AddRoute from './containers/Tracking/components/AddRoute';
 
 function App() {
-  const [section, setSection] = useState('ProfitEvidence')
+  const [section, setSection] = useState('AddRoute')
 
   const RenderSection = () => {
     if (section === "Dashboard") {
@@ -74,6 +75,9 @@ function App() {
       return (
         <Drivers />
       )
+    }
+    if (section === "AddRoute") {
+      return <AddRoute />
     }
     return null;
   }
