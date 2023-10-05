@@ -4,9 +4,9 @@ import { PieChart, Pie, Cell } from 'recharts';
 
 const RADIAN = Math.PI / 180;
 const data = [
-  { name: 'A', value: 20, color: '#676767' },
+  { name: 'A', value: 10, color: '#676767' },
   { name: 'B', value: 20, color: '#F2A42C' },
-  { name: 'C', value: 20, color: '#70C3ED' },
+  { name: 'C', value: 50, color: '#70C3ED' },
 ];
 const cx = 80;
 const cy = 280;

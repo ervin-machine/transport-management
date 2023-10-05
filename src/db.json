@@ -55,7 +55,8 @@
             "started": "startedFrom",
             "finishTime": "finishTIme",
             "type": "export",
-            "company": "company"
+            "company": "company",
+            "country": "country"
         }
     ],
     "currentProfit": "2000$",
