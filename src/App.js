@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import 'devextreme/dist/css/dx.light.css';
 import "./App.css"
 import Header from './layouts/Header/Header';
 import LeftSidebar from "./layouts/LeftSidebar/index";
@@ -12,6 +13,7 @@ import Partners from './containers/Partners/index'
 import Drivers from './containers/Drivers';
 import ProfitEvidence from './containers/Dashboard/components/ProfitEvidence';
 import AddRoute from './containers/Tracking/components/AddRoute';
+import PutniNalog from './containers/PutniNalog';
 
 function App() {
   const [section, setSection] = useState('AddRoute')
@@ -78,6 +80,9 @@ function App() {
     }
     if (section === "AddRoute") {
       return <AddRoute />
+    }
+    if (section === "PutniNalog") {
+      return <PutniNalog />
     }
     return null;
   }

@@ -1,0 +1,15 @@
+.putni-nalog-container {
+    margin: 20px;
+}
+
+.putni-nalog-datagrid {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.dx-datagrid-text-content {
+    color: white;
+}
