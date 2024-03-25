@@ -56,8 +56,18 @@ p {
     width: 150px;
 }
 
+.fleet-card-status-content {
+    height: 170px;
+    border-radius: 20px;
+    background-color: rgb(24, 24, 24);;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin-top: 5px;
+}
+
 .loading-card-status-content {
-    width: 500px;
     height: 170px;
     border-radius: 20px;
     background-color: rgb(24, 24, 24);;
@@ -70,7 +80,6 @@ p {
 }
 
 .delivery-card-status {
-    width: 255px;
     height: 475px;
     border-radius: 20px;
     background-color: rgb(24, 24, 24);;
@@ -84,7 +93,6 @@ p {
 }
 
 .profit-country-content {
-    width: 1010px;
     height: 295px;
     border-radius: 20px;
     background-color: rgb(24, 24, 24);;
@@ -97,8 +105,7 @@ p {
 }
 
 .avg-delivery-route-content {
-    width: 520px;
-    height: 295px;
+    height: 470px;
     border-radius: 20px;
     background-color: rgb(24, 24, 24);;
     display: flex;
@@ -111,7 +118,6 @@ p {
 }
 
 .avg-time-delivery-content {
-    width: 1010px;
     height: 295px;
     border-radius: 20px;
     background-color: rgb(24, 24, 24);;
@@ -121,6 +127,7 @@ p {
     color: white;
     margin-top: 10px;
     flex-direction: column;
+    margin-bottom: 80px;
 }
 
 .loading-time-content {

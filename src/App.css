@@ -1,6 +1,7 @@
 .App {
   margin: 0;
   background: black;
+  height: 100vh;
 }
 
 html {
