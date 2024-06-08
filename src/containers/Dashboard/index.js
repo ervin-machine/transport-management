@@ -13,30 +13,45 @@ import "./Dashboard.css"
 
 import { selectKusurData } from "./store/selectors"
 import { fetchData } from "./store/actions/index"
+import { Grid } from "@mui/material";
+import { Box } from '@mui/material'
 
 const Dashboard = React.memo(function Dashboard(props) {
-    const { fetchData, kusurData }  = props
+    const { fetchData }  = props
 
     useEffect(() => {
         fetchData()
     }, [fetchData])
  
     return (
-        <div className='dashboard-container'>
-            <div className='dashboard-content'>
-            <ProfitStatus />
-            <div>
-                <div style={{ display: "flex" }}>
-                    <FleetStatus />
-                    <LoadingStatus />
-                </div>
-                <ProfitCountry />
-            </div>
-            <DeliveryStatus />
-            <AvgDevliveryRoute />
-            <AvgTimeDelivery />
-            </div>
-        </div>
+        <Box sx={{ width: "85.3%" }}>
+            <Grid container spacing={2} justifyContent={"center"} height={"100vh"} overflow={"auto"}>
+                <Grid item md={12}>
+                    <ProfitStatus />
+                </Grid>
+                    <Grid item md={5.5}>
+                        <FleetStatus />
+                    </Grid>
+                    <Grid item md={5.5}>
+                        <LoadingStatus />
+                    </Grid>
+                    <Grid item md={11}>
+                        <ProfitCountry />
+                    </Grid>
+                <Grid container spacing={2} justifyContent={"center"} sx={{ marginTop: "5px" }}>
+                    <Grid item md={5.5}>
+                        <DeliveryStatus />
+                    </Grid>
+                    <Grid item md={5.75}>
+                        <AvgDevliveryRoute />
+                    </Grid>
+                </Grid>
+                <Grid item md={11}>
+                    <AvgTimeDelivery />
+                </Grid>
+            </Grid>
+        </Box>
+        
     )
 }
 )

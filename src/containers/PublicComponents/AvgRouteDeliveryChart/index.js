@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
     {
@@ -27,7 +27,7 @@ export default class AvgRouteDeliveryChart extends PureComponent {
 
   render() {
     return (
-      <ResponsiveContainer width="100%" height={230}>
+      <ResponsiveContainer width="100%" height={380}>
         <BarChart
           width={500}
           height={230}

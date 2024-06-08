@@ -13,18 +13,9 @@ function LeftSidebar(props) {
     setIsEIExpanded(!isEIExpanded);
   }
 
-  const handleIzvjestajExpand = () => {
-    setIsIzvjestajExpanded(!isIzvjestajExpanded);
-  }
-
   const handleExportImport = () => {
     handleEIExpand();
     setSection("ExportImport")
-  }
-
-  const handleIzvjestaj = () => {
-    handleIzvjestajExpand();
-    setSection("MjesecnaAnaliza")
   }
 
   const handleAddModal = () => {
@@ -66,17 +57,6 @@ function LeftSidebar(props) {
             <li className="nav-item" onClick={() => setSection("RouteCalculating")}>
               <i class="fas fa-window-maximize"></i><span>Route Calculate</span>
             </li>
-            <li className="nav-item" onClick={handleIzvjestaj}>
-              <i class="fas fa-window-maximize"></i><span>Izvjestaj</span>
-            </li>
-            <div style={{ display: isIzvjestajExpanded ? "block" : "none", marginLeft: "15px"}}>
-              <li className="nav-item" onClick={() => setSection("MjesecnaAnaliza")}>
-                <i class="fas fa-window-maximize"></i><span>Mjesecni izvjestaj</span>
-              </li>
-              <li className="nav-item" onClick={() => setSection("DnevnaAnaliza")}>
-                <i class="fas fa-window-maximize"></i><span>Dnevni Izvjestaj</span>
-              </li>
-            </div>
           </ul>
           
         </div>

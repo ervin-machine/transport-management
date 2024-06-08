@@ -1,5 +1,4 @@
 import React from 'react'
-import "./FleetCardStatus.css"
 
 function FleetCardStatus({ children }) {
   return (

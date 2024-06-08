@@ -3,9 +3,11 @@ import DeliveryCardStatus from '../../../PublicComponents/DeliveryCardStatus'
 import DeliveryStatusChart from '../../../PublicComponents/DeliveryStatusChart'
 import DeliveryCountryStatusChart from '../../../PublicComponents/DeliveryCountryStatusChart'
 
+import { Grid } from "@mui/material";
+
 function DeliveryStatus() {
   return (
-    <div style={{ display: "flex" }}>
+    <Grid container spacing={2} justifyContent={"center"}>
         <DeliveryCardStatus>
             <p>Delivery Status</p>
             <DeliveryStatusChart />
@@ -36,7 +38,7 @@ function DeliveryStatus() {
                 </div>
             </div>
         </DeliveryCardStatus>
-    </div>
+    </Grid>
   )
 }
 

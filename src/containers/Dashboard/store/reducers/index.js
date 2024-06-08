@@ -15,6 +15,7 @@ const kusurDataReducer = (state = initialState, action) =>
             case types.FETCH_DATA_SUCCESS:
                 draft.isLoading = false;
                 draft.data = action.payload
+                console.log("test")
                 break;
             case types.FETCH_DATA_FAILURE:
                 draft.isLoading = false;

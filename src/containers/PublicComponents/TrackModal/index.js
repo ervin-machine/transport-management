@@ -23,8 +23,8 @@ const style = {
     border: 'none',
     boxShadow: 24,
     p: 4,
-    width: "80%",
-    height: "80%"
+    width: "100%",
+    height: "85%"
 };
 
 const center = { lat: 48.8584, lng: 2.2945 }

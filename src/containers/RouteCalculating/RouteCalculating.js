@@ -61,7 +61,7 @@ function RouteCalculating() {
             <GoogleMap
                 center={center}
                 zoom={15}
-                mapContainerStyle={{ width: '100%', height: '100%', zIndex: -1, position: "absolute" }}
+                mapContainerStyle={{ width: '84.9%', height: '92.6%', position: "absolute" }}
                 options={{
                     zoomControl: false,
                     streetViewControl: false,

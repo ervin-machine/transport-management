@@ -6,19 +6,27 @@ import LeftSidebar from "./layouts/LeftSidebar/index";
 import Dashboard from "./containers/Dashboard";
 import Tracking from './containers/Tracking';
 import RouteCalculating from './containers/RouteCalculating/RouteCalculating';
-import ExportImport from './containers/ExportImport/ExportImport';
-import DnevnaAnaliza from './containers/DnevnaAnaliza';
-import MjesecnaAnaliza from './containers/MjesecnaAnaliza/index'
+import ExportImport from './containers/ExportImport/index';
 import Partners from './containers/Partners/index'
 import Drivers from './containers/Drivers';
 import ProfitEvidence from './containers/Dashboard/components/ProfitEvidence';
 import AddRoute from './containers/Tracking/components/AddRoute';
 import PutniNalog from './containers/PutniNalog';
+import Login from './containers/Login';
+import Register from './containers/Register';
 
 function App() {
-  const [section, setSection] = useState('AddRoute')
+  const [section, setSection] = useState('Login')
 
   const RenderSection = () => {
+    if(section === "Register") {
+      return <Register setSection={setSection} />
+    }
+
+    if(section === "Login") {
+      return <Login setSection={setSection} />
+    }
+
     if (section === "Dashboard") {
       return (
         <Dashboard setSection={setSection} />
@@ -43,29 +51,9 @@ function App() {
       )
     }
 
-    if (section === "ExportImport") {
+    if (section === "ExportImport" || section === "Export" || section === "Import") {
       return (
-        <ExportImport />
-      )
-    }
-    if (section === "Export") {
-      return (
-        <ExportImport />
-      )
-    }
-    if (section === "Import") {
-      return (
-        <ExportImport />
-      )
-    }
-    if (section === "DnevnaAnaliza") {
-      return (
-        <DnevnaAnaliza />
-      )
-    }
-    if (section === "MjesecnaAnaliza") {
-      return (
-        <MjesecnaAnaliza />
+        <ExportImport section={section} />
       )
     }
     if (section === "Partners") {
@@ -88,12 +76,12 @@ function App() {
   }
   return (
       <div className="App">
-        <Header />
+        {section !== "Login" && section !== "Register" ? <Header />: null}
         <div style={{display: "flex" }}>
-          <LeftSidebar setSection={setSection} />
+        {section !== "Login" && section !== "Register" ?<LeftSidebar setSection={setSection} />: null}
           <RenderSection />
         </div>
-      </div>
+      </div> 
   );
 }
 
