@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -8,9 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import TrackCard from '../PublicComponents/TrackCard/TrackCard'
 import user from "../../assets/images/user.png"
-import GoogleMaps from '../PublicComponents/GoogleMap/GoogleMap'
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -22,8 +20,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function Drivers(props) {
-    const { setMap } = props
-    const [isRouteInfoOpened, setIsRouteInfoOpened] = useState(false)
 
     return (
         <Box sx={{ width: "85.3%" }}>

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {
-    useJsApiLoader,
     GoogleMap,
 } from '@react-google-maps/api'
 import { useState } from 'react'
@@ -32,10 +31,6 @@ const center = { lat: 48.8584, lng: 2.2945 }
 
 function TrackModal(props) {
     const {handleOpenTrackModal, isRouteInfoOpened} = props
-    const { isLoaded } = useJsApiLoader({
-        googleMapsApiKey: "AIzaSyDWKo7p9suXytIA19vdrw7pagFh0njxM-k",
-        libraries: ['places'],
-    })
     // eslint-disable-next-line
     const [map, setMap] = useState(/** @type google.maps.Map */(null))
 

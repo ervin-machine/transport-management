@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./Header.css"
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';

@@ -6,7 +6,6 @@ import AddModal from '../../containers/PublicComponents/AddModal';
 function LeftSidebar(props) {
   const { setSection } = props;
   const [isEIExpanded, setIsEIExpanded] = useState(false);
-  const [isIzvjestajExpanded, setIsIzvjestajExpanded] = useState(false);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   
   const handleEIExpand = () => {

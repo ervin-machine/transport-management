@@ -14,10 +14,7 @@ import "./Dashboard.css"
 import { selectKusurData } from "./store/selectors"
 import { fetchData } from "./store/actions/index"
 import { Grid } from "@mui/material";
-<<<<<<< HEAD
 import { Box } from '@mui/material'
-=======
->>>>>>> 458e1f43e98da075ff8c55b1d5acacb40a3b2c0c
 
 const Dashboard = React.memo(function Dashboard(props) {
     const { fetchData }  = props

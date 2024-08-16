@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProfitEvidence.css";
-import { Formik, Form, Field, getIn } from "formik";
+import { Formik, Form, Field } from "formik";
 import { ProfitEvidenceSchema } from "./ProfitEvidenceSchema";
 import Typography from "@mui/material/Typography";
 import Accordion from "@mui/material/Accordion";
@@ -32,7 +32,6 @@ function ProfitEvidence() {
             vinjetaRoute: "",
             fuelCompany: "",
             fuelLitres: "",
-            vinjetaPrice: "",
             fuelPrice: "",
             driverRoute: "",
             driverPrice: "",

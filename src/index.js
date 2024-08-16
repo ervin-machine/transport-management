@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'connected-react-router'
 import App from './App';
-import { ChakraProvider, theme } from '@chakra-ui/react'
 import history from './utils/history'
 import configureStore from './store/configureStore'
 import 'bootstrap/dist/css/bootstrap.min.css';
