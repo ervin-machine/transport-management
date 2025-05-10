@@ -30,9 +30,6 @@ function LeftSidebar(props) {
             <li className="nav-item" onClick={() => setSection("Dashboard")}>
               <i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
             </li>
-            <li className="nav-item" onClick={() => setSection("Partners")}>
-              <i class="fas fa-tachometer-alt"></i><span>Partners</span>
-            </li>
             <li className="nav-item" onClick={handleExportImport}>
               <i class="fas fa-table"></i><span>Export/Import</span>
             </li>

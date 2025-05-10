@@ -26,18 +26,18 @@ const Dashboard = React.memo(function Dashboard(props) {
     return (
         <Box sx={{ width: "85.3%" }}>
             <Grid container spacing={2} justifyContent={"center"} height={"100vh"} overflow={"auto"}>
-                <Grid item md={12}>
+                <Grid item lg={12}>
                     <ProfitStatus />
                 </Grid>
-                    <Grid item md={5.5}>
-                        <FleetStatus />
-                    </Grid>
-                    <Grid item md={5.5}>
-                        <LoadingStatus />
-                    </Grid>
-                    <Grid item md={11}>
-                        <ProfitCountry />
-                    </Grid>
+                <Grid item lg={5.5} md={10}>
+                    <FleetStatus />
+                </Grid>
+                <Grid item lg={5.5} md={10}>
+                    <LoadingStatus />
+                </Grid>
+                <Grid item md={11}>
+                    <ProfitCountry />
+                </Grid>
                 <Grid container spacing={2} justifyContent={"center"} sx={{ marginTop: "5px" }}>
                     <Grid item md={5.5}>
                         <DeliveryStatus />

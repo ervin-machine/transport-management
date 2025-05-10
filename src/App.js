@@ -7,7 +7,6 @@ import Dashboard from "./containers/Dashboard";
 import Tracking from './containers/Tracking';
 import RouteCalculating from './containers/RouteCalculating/RouteCalculating';
 import ExportImport from './containers/ExportImport/index';
-import Partners from './containers/Partners/index'
 import Drivers from './containers/Drivers';
 import ProfitEvidence from './containers/Dashboard/components/ProfitEvidence';
 import AddRoute from './containers/Tracking/components/AddRoute';
@@ -54,11 +53,6 @@ function App() {
     if (section === "ExportImport" || section === "Export" || section === "Import") {
       return (
         <ExportImport section={section} />
-      )
-    }
-    if (section === "Partners") {
-      return (
-        <Partners />
       )
     }
     if (section === "Drivers") {

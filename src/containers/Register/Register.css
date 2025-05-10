@@ -25,13 +25,14 @@
 
 .register-label {
     margin: 5px;
+    color: white;
 }
 
 .register-input {
     width: 300px;
     height: 40px;
     border-radius: 20px;
-    border: none;
+    border: 1px solid white;
     margin: 10px;
 }
 

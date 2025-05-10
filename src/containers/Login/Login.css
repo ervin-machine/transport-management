@@ -1,5 +1,7 @@
 .login-container {
     width: 100%;
+    max-width: 1200px; /* Ensure the container has a limit */
+    margin: auto; /* Center the container */
 }
 
 .login-content {
@@ -7,6 +9,8 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
+    container-type: inline-size;
 }
 
 .login-frame {
@@ -35,12 +39,19 @@
     margin: 10px;
 }
 
-.login-button {
+.MuiButton-root.login-button {
     border: none;
     border-radius: 20px;
     width: 100px;
     height: 40px;
     font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+.MuiButton-root.login-button:hover {
+    background-color: white;
+    color: black;
 }
 
 .new-user-content {
@@ -48,9 +59,30 @@
     margin-top: 10px;
 }
 
-.new-user-button {
+.MuiButton-root.new-user-button {
     background-color: transparent;
     color: wheat;
     border: none;
-    margin-top: -15px;
+    margin-top: -7px;
 }
+
+@media only screen and (max-width: 900px){
+   .login-content {
+    flex-direction: column;
+   }
+}
+
+@media only screen and (max-width: 400px){
+    .login-content {
+     flex-direction: column;
+    }
+
+    .login-frame {
+        background-color: rgb(24, 24, 24);
+        width: 350px;
+        height: 300px;
+        margin: 10px;
+        border-radius: 20px;
+        padding: 60px;
+    }
+ }
